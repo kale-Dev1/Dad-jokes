@@ -27,5 +27,5 @@ async function fetchJoke() {
   }
   async function handleClick() {
     const { joke } = await fetchJoke();
-    console.log(joke);
+    document.getElementById('joke').innerHTML = joke;
   }
